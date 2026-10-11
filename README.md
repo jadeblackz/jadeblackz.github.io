@@ -1,6 +1,6 @@
 # Cheryl 公 · personal link hub
 
-A single-page link hub for **@ahkongbuys** (lifestyle and streams) and **ahkongcafe** (food and drinks). It replaces Linktree as the link you share.
+A full-page personal site for **@ahkongbuys** (lifestyle and streams) and **ahkongcafe** (food and drinks). It replaces Linktree as the link you share.
 
 - `index.html`: the whole site (HTML, CSS and a little JS in one file, no build step)
 - `assets/avatar.jpg`: profile photo, taken from your Linktree picture
@@ -15,20 +15,19 @@ All of these are marked with `EDIT ME` comments inside `index.html` (search for 
 
 1. **Collab emails.** Set: Jade Blackz → `heyjadeblackz@gmail.com`, Ah Kong Cafe → `ahkongcafe@gmail.com` (already in the page).
 2. **Bio.** The line under your name. Right now it uses your Linktree bio plus one extra line.
-3. **Status line.** "On a little break for house reno. Catch me on socials!" Change or delete it when streams are back. Also update the small "Live streams are paused…" note under the chips.
-4. **Share preview image (optional).** After publishing, change the `og:image` meta tag to your full URL, e.g. `https://jadeblackz.github.io/assets/avatar.jpg`, so the photo shows up when the link is shared on WhatsApp, X and similar apps.
+3. **Status line.** "On a little break for house reno. Catch me on socials!" in the hero, plus the "Streams are paused for the house reno" band. Change or delete both when streams are back.
+4. **Share preview image.** Already set to `https://jadeblackz.github.io/assets/avatar.jpg`, so your photo shows when the link is shared on WhatsApp, X and similar apps.
 5. **Photo (optional).** Replace `assets/avatar.jpg` with any square photo and keep the same file name.
 
-All social links come from your two Linktrees, so none of them are guesses. There are no `#` placeholder links.
+All social links were taken from your old Linktrees, so none of them are guesses. The page no longer links to Linktree. There are no `#` placeholder links.
 
 ### Adding or removing a link
 Copy one `<li>…</li>` line inside a section and change the `href`, the name, and the small `sub` text. The two letters in the `badge` are the little icon text.
 
-### Sections and tabs
-Each section has `data-cat="streamer"`, `"cafe"` or `"support"`. The tabs at the top filter by that value. You can deep link to a tab:
-- `…/#streamer`
-- `…/#cafe`
-- `…/#support`
+### Sections and jump links
+The page is one long full-width site: hero, About, Watch & follow, stream update band, Shop & support, Collabs and footer. The sticky menu and the phone bottom bar jump to each section. You can link straight to a part of the page:
+- `…/#about`, `…/#watch`, `…/#support`, `…/#collab`
+- `…/#streamer` (ahkongbuys socials), `…/#gaming` (JadeBlackz), `…/#cafe` (ahkongcafe)
 
 ---
 
@@ -60,7 +59,7 @@ To update the site later, edit `index.html` on GitHub (pencil icon) or upload a 
 2. In Bitly, choose **Create new → Link**, paste the Pages URL, and set a custom back-half (e.g. `bit.ly/cherylkong`).
 3. Put that Bitly link in your Instagram, TikTok, YouTube, Threads and other bios in place of Linktree.
 
-Tip: you can make extra Bitly links for each tab, e.g. `bit.ly/ahkongcafe-links` → `https://jadeblackz.github.io/#cafe`.
+Tip: you can make extra Bitly links for each section, e.g. `bit.ly/ahkongcafe-links` → `https://jadeblackz.github.io/#cafe`.
 
 If you ever move the site, just edit where the Bitly link points. Your bios don't need to change.
 
